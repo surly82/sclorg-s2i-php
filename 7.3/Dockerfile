@@ -8,6 +8,7 @@ RUN yum update -y && \
     yum clean all && \
     yum install -y php-xmlrpc && \
     yum install -y glibc-all-langpacks.x86_64  && \
+    yum reinstall -y glibc-common && \
     yum clean all
 
 # Might want to refine this (something more specific than $APP_DATA)
