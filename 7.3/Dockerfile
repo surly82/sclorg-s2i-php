@@ -13,7 +13,7 @@ RUN yum update -y && \
 
 # Might want to refine this (something more specific than $APP_DATA)
 RUN chgrp -Rf 0 $APP_DATA && \
-    chmod -Rf g=u $APP_DATA && \
+    chmod -Rf g+w $APP_DATA && \
     cd $APP_DATA && \
     umask 002
 
