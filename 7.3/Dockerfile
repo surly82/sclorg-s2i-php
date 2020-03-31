@@ -12,7 +12,7 @@ RUN yum update -y && \
     yum clean all
 
 # Might want to refine this (something more specific than $APP_DATA)
-RUN chgrp -Rf 0 $APP_DATA && \
+RUN chgrp -Rf root $APP_DATA && \
     chmod -Rf g+w $APP_DATA && \
     cd $APP_DATA && \
     umask 002
