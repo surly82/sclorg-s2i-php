@@ -6,3 +6,6 @@ See https://github.com/sclorg/s2i-php-container/tree/master/7.2
 
 ## Structure
 Subfolders match versions of php.
+
+## Notes
+This needs a redhat subscription to update modules.
