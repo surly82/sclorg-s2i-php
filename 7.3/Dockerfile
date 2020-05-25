@@ -11,6 +11,7 @@ RUN yum update -y && \
     yum install -y langpacks-fr  && \
     yum reinstall -y glibc-common && \
     yum clean all
+    dnf install postgresql12
 
 # Might want to refine this (something more specific than $APP_DATA)
 RUN chgrp -Rf root $APP_DATA && \
