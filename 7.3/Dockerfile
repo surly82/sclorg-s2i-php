@@ -18,4 +18,6 @@ RUN chgrp -Rf root $APP_DATA && \
     cd $APP_DATA && \
     umask 002
 
+RUN echo $APP_DATA
+
 USER 1001
